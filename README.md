@@ -3,7 +3,7 @@
 # :dart: Computer-Science
 
 ## ✨ Network
-- HTTP & HTTPS
+- [HTTP & HTTPS]()
 
 ## ✨ Database
 
@@ -13,7 +13,7 @@
 
 ## ✨ Data Structure
 
-## ✨ 디자인 패턴
+## ✨ Design Pattern
 
 
 # :dart: Language

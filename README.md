@@ -3,7 +3,7 @@
 # :dart: Computer-Science
 
 ## ✨ Network
-- [HTTP & HTTPS](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Network/http & https.md)
+- [HTTP & HTTPS](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Network/http%20&%20https.md)
 
 ## ✨ Database
 

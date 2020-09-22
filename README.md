@@ -3,6 +3,7 @@
 # :dart: Computer-Science
 
 ## ✨ Network
+- HTTP & HTTPS
 
 ## ✨ Database
 

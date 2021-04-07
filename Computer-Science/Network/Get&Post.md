@@ -13,7 +13,7 @@ HTTP 프로토콜을 이용해서 `서버에 데이터(요청 정보)를 전달`
   - url이라는 공간에 담겨 전송되기 때문에 전송할 수 있는 데이터의 크기는 제한적이다. (255자로 제한)
   - url에 데이터가 그대로 노출되기 때문에 보안에 취약하다.
   - 불필요한 요청을 제한하기 위해서 캐시될 수 있다. js, css, 이미지 같은 정적 컨텐츠는 용량이 크고, 변동될 일이 적기 때문에 동일한 요청을 반복할 필요가 없다. 따라서 정적 컨텐츠를 요청하고 나면 브라우저에서는 요청을 캐시해두고, 동일한 요청이 발생할 때 서버로 요청을 보내지 않고 캐시된 데이터를 사용한다.
-  - POST 방식보다 빠르다. (캐쉬 때문)
+  - POST 방식보다 빠르다.(캐쉬 때문)
 
 ## POST
 - 개념
@@ -29,8 +29,11 @@ HTTP 프로토콜을 이용해서 `서버에 데이터(요청 정보)를 전달`
 ## GET과 POST의 차이점 (멱등성을 고려하여)
 GET은 `Idempotent`, POST는 `Non-idempotent`하게 설계되었다.  
 > Idempotent(멱등)
+>
 > 수학이나 전산학에서 연산의 한 성질을 나타내는 것으로, 연산을 여러 번 적용하더라도 결과가 달라지지 않는 성질
-즉, 멱등이라는 것은 동일한 연산을 여러 번 수행하더라도 `동일한 결과`가 나타나야 한다.
+>
+> 즉, 멱등이라는 것은 동일한 연산을 여러 번 수행하더라도 `동일한 결과`가 나타나야 한다.
+
 
 ### GET
 - GET은 Idempotent하기 떄문에 GET으로 서버에게 동일한 요청을 여러 번 전송하더라도 동일한 응답이 돌아와야 한다는 것을 의미한다.
@@ -42,7 +45,12 @@ GET은 `Idempotent`, POST는 `Non-idempotent`하게 설계되었다.
 - 게시글을 쓰면 서버에 게시글이 저장이 되고, 게시글을 삭제하면 해당 데이터가 없어지는 등 POST로 요청을 하게 되면 서버의 무언가는 변경된다. 이처럼 POST는 생성, 수정, 삭제에 사용할 수 있다. (하지만, 생성에는 POST, 수정은 PUT 또는 PATCH, 삭제는 DELETE가 더 용도에 맞는 메소드이다.)
 
 
-**GET과 POST는 이처럼 큰 차이가 있기 때문에 설계원칙에 따라 적절한 용도로 사용해야한다.**
+
+
+**"GET과 POST는 이처럼 큰 차이가 있기 때문에 설계원칙에 따라 적절한 용도로 사용해야한다."**
+
+
+
 
 
 ## 질문
@@ -58,5 +66,5 @@ GET은 `Idempotent`, POST는 `Non-idempotent`하게 설계되었다.
 
 
 ### 참고
-[hongsii](https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/)
-[WeareSoft](https://github.com/WeareSoft/tech-interview/blob/master/contents/network.md#http%EC%99%80-https)
+- [hongsii](https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/)
+- [WeareSoft](https://github.com/WeareSoft/tech-interview/blob/master/contents/network.md#http%EC%99%80-https)

@@ -1,7 +1,5 @@
 # Tech-Interview
 
-## [참고할 체크 리스트](https://github.com/saygenie/boostcamp_interview_study)
-
 
 # :dart: Computer-Science
 

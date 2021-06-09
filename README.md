@@ -10,6 +10,7 @@
 - [Get & Post](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Network/Get%26Post.md)
 - [TCP & UDP](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Network/TCP%26UDP.md)
 
+- [질문 리스트](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Network/questions.md)
 ## ✨ Database
 
 ## ✨ Operating System

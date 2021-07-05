@@ -9,6 +9,10 @@
 - [TCP & UDP](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Network/TCP%26UDP.md)
 - [쿠키 & 세션](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Network/쿠키%20&%20세션.md)
 
-## ✨ DataBase
-
 ## ✨ Operating System
+- [시스템 콜]()
+- [PCB & Context Switching]()
+- [IPC]()
+- [메모리 관리]()
+
+## ✨ DataBase

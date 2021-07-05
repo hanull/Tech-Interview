@@ -6,7 +6,7 @@ CPU가 프로세스가 여러개일 때, CPU 스케줄링을 통해 관리를 �
 
 운영체제가 시스템 내의 프로세스들을 관리하기 위해서 프로세스 정보들을 저장하는 곳을 말한다.
 - 보통 PCB는 프로세스의 모든 정적/동적 정보를 보관하는 커널 데이터 구조라고 한다.
-- 프로세스 상태관리, 문맥 교환을 위해 필요하다.
+- 프로세스 상태 관리, 문맥 교환을 위해 필요하다.
 - 프로세스 생성 시 만들어지며 주기억장치에 유지된다.
 
 ### PCB에 저장되는 내용들
@@ -30,5 +30,21 @@ Linked List 방식으로 관리한다. PCB List Head에 PCB들이 생성될 때�
 
 
 ## 문맥 교환(Context Swithcing)
-문맥 교환이란 수행 중인 프로세스를 변경할 때, CPU의 레지스터 정보가 변경되는 것을 말한다.
-즉, CPU를 점유하고 있던 프로세스A가 I/O interrupt, System Call, tile slice burst 등으로 인해 blocked되고, 다른 프로세스B가 CPU를 점유하게 되는 상황
+문맥 교환이란 현재 진행하고 있는 Task(Process, Thread)의 상태를 저장하고 다음 진행할 Task의 상태 값을 읽어 적용하는 과정을 말한다.
+즉, CPU를 점유하고 있던 프로세스A가 I/O interrupt, System Call, tile slice burst 등으로 인해 blocked 되고, 다른 프로세스B가 CPU를 점유하게 되는 상황
+
+### Context Switching Cost
+Context Switching이 발생하게 되면 많은 Cost가 소요된다.
+- Cache 초기화
+- Memory Mapping 초기화
+- Kernel은 항상 실행되어야 함(메모리의 접근을 위해서)
+
+
+###  Process vs Thread
+Context Switching 비용은 Process가 Thread보다 많이 든다.
+- Thread는 Stack 영역을 제외한 모든 메모리를 공유하기 때문
+- Context Switching 발생시 Stack 영역만 변경을 진행하면 된다.
+
+
+### 참고
+- https://nesoy.github.io/articles/2018-11/Context-Switching

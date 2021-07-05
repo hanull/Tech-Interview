@@ -10,9 +10,9 @@
 - [쿠키 & 세션](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Network/쿠키%20&%20세션.md)
 
 ## ✨ Operating System
-- [시스템 콜]()
-- [PCB & Context Switching]()
-- [IPC]()
+- [시스템 콜](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Operating%20System/%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%BD%9C.md)
+- [PCB & Context Switching](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Operating%20System/PCB%20%26%20Context%20Switching.md)
+- [IPC](https://github.com/hanull/Tech-Interview/blob/master/Computer-Science/Operating%20System/IPC.md)
 - [메모리 관리]()
 
 ## ✨ DataBase
